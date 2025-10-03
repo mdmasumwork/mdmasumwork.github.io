@@ -1,36 +1,552 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Home Page</title>
-    <style>
-        img {
-            width: 200px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h2>Home Page</h2>
-    </header>
-    <div class="container">
-        <div class="cover-photo">
-            <img src="assets/md.masum.png" alt="Md Masum">
-            <h3>Md Masum</h3>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Leven - Resume / CV / vCard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Leven - Resume / CV / vCard Template" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, portfolio" />
+    <meta name="author" content="lmpixels" />
+    <link rel="shortcut icon" href="favicon.ico">
+
+
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/fonts/fontawesome-free-5.12.1-web/css/all.min.css">
+
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+
+  <body class="page">
+    <canvas id="backgroundCanvas"></canvas>
+    <div class="lm-animated-bg"></div>
+    
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
         </div>
-        <ul class="assignment-list">
-            <li>HTML and CSS</li>
-            <li>Basic CSS Styling</li>
-            <li>CSS Practice</li>
-            <li>Movie Review</li>
-            <li>Page Layout</li>
-            <li>Basic JavaScript</li>
-            <li>Scope, clouser and encapsulation</li>
-        </ul>
+      </div>
     </div>
-    <footer>
-        <a href="http://validator.w3.org/check/referer">
-            <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator"/>
-        </a>
-    </footer>
-</body>
+    <!-- /Loading animation -->
+
+    <!-- Scroll To Top Button -->
+    <div class="lmpixels-scroll-to-top"><i class="lnr lnr-chevron-up"></i></div>
+    <!-- /Scroll To Top Button -->
+
+    <div class="page-scroll">
+      <div id="page_container" class="page-container bg-move-effect" data-animation="transition-flip-in-right">
+
+        <!-- Header -->
+        <header id="site_header" class="header">
+          <div class="header-content clearfix">
+                
+            <!-- Text Logo -->
+            <div class="text-logo">
+              <a href="index.html">
+                <div class="logo-symbol">M</div>
+                <div class="logo-text">Md <span>Masum</span></div>
+              </a>
+            </div>
+            <!-- /Text Logo -->
+
+            <!-- Navigation -->
+            <div class="site-nav mobile-menu-hide">
+              <ul class="leven-classic-menu site-main-menu">
+
+                <li class="menu-item">
+                  <a href="#">Resume</a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="#">Research</a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <a class="menu-toggle mobile-visible">
+              <i class="fa fa-bars"></i>
+            </a>
+            <!-- Mobile Menu Toggle -->
+          </div>
+        </header>
+        <!-- /Header -->
+
+        <div id="main" class="site-main">
+          <div id="main-content" class="single-page-content">
+            <div id="primary" class="content-area">    
+              <div id="content" class="page-content site-content single-post" role="main">
+                <!-- Home Page Top Part -->
+                <div class="row">
+                  <div class=" col-xs-12 col-sm-12">
+                    <div class="home-content">
+                      <div class="row flex-v-align">
+                        
+                        <div class="col-sm-12 col-md-5 col-lg-5">
+                          <div class="home-photo">
+                            <div class="hp-inner" style="background-image: url(./img/mdmasum.png);">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-7 col-lg-7">
+                          <div class="home-text hp-left">
+                            <div class="owl-carousel text-rotation">                                    
+                              <div class="item">
+                                <h4>Full Stack Developer</h4>
+                              </div>
+
+                              <div class="item">
+                                <h4>Applied AI Researcher</h4>
+                              </div>
+                            </div>
+                              
+                            <h1>Md Masum</h1>
+                            <p class="credibility-chips"><a href="https://ieeexplore.ieee.org/document/11081368" target="_blank">Peer-reviewed Author</a><a href="https://epaper.bhorerkagoj.net/national/2025/08/31/8" target="_blank">Featured in Daily Bangladesh (2025)</a></p>
+                            <p>Applied-AI researcher and full-stack software engineer with 7+ years’ experience delivering web and cloud solutions worldwide. Holds a B.Sc. in CSE (Bangladesh) and an M.S. in Computer Science (USA); now pursuing a second Master’s degree in USA. Published in a peer-reviewed venue with two more papers in progress and featured in national media for research-driven innovation.</p>
+                            
+                                 
+                            <div class="home-buttons hero-buttons">
+                              <a href="research/revolutionizing-drug-discovery-ai-ml.html" target="_blank" class="btn btn-primary">View Research</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Home Page Top Part -->
+
+                <!-- Services -->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12">
+                    <div class="p-50"></div>
+
+                    <div class="block-title">
+                      <h2>Areas of Expertise & Impact</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="info-list-w-icon">
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="fas fa-brain"></i>
+                        </div>
+      
+                        <div class="ci-text">
+                          <h4>Applied AI Research</h4>
+                          <p>Conducts studies on prompt-engineering patterns, safety, and evaluation for AI-assisted writing tools; published in peer-reviewed venues.</p>
+                        </div>
+                      </div>
+    
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="fas fa-hands-helping"></i>
+                        </div>
+     
+                        <div class="ci-text">
+                          <h4>EverRemember – AI for Compassionate Communication</h4>
+                          <p>Founder and developer of EverRemember.com, an AI-powered platform that helps families generate eulogies, obituaries, and condolence messages with empathy and cultural sensitivity.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="info-list-w-icon">
+
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="fas fa-code"></i>
+                        </div>
+
+                        <div class="ci-text">
+                          <h4>Full-Stack Software Engineering</h4>
+                          <p>7+ years’ experience building secure, scalable cloud-based applications and APIs used by companies in the U S and abroad.</p>
+                        </div>
+                      </div>
+
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="fas fa-book-open"></i>
+                        </div>
+
+                        <div class="ci-text">
+                          <h4>Scientific Publications & Public Outreach</h4>
+                          <p>Author of “Revolutionizing Drug Discovery…” (IEEE 2025) with two more papers in progress; featured in national media for research-driven innovation.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Services -->
+
+                <!-- Featured projects -->
+                <div class="row">
+                  <div class="block-title">
+                    <h2>Featured Projects</h2>
+                  </div>
+
+                  <!-- Portfolio Grid -->
+                  <div class="portfolio-grid three-columns shuffle custom">
+
+                    <!-- Portfolio Item 1 -->
+                    <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                      <div class="portfolio-item-img custom">
+                        <img src="./img/portfolio/ever-remember-2.png" alt="Full Project 2" title="" />
+                        <a href="portfolio-project-2.html" class="ajax-page-load"></a>                        
+                      </div>
+                      <div class="card-text">
+                        <p><span style="font-weight: bold;">EverRemember.com</span> – AI-powered assistant that helps to create thoughtful messages.</p>
+                        <a href="#">Learn More</a>
+                      </div>
+                    </figure>
+                    <!-- /Portfolio Item 1 -->
+
+                    <!-- Portfolio Item 2 -->
+                    <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                      <div class="portfolio-item-img custom">
+                        <img src="./img/portfolio/seramount-2.png" alt="Full Project 2" title="" />
+                        <a href="portfolio-project-2.html" class="ajax-page-load"></a>                        
+                      </div>
+                      <div class="card-text">
+                        <p><span style="font-weight: bold;">Seramount.com</span> – corporate site for a leading DEI research & consulting organization</p>
+                        <a href="#">Learn More</a>
+                      </div>
+                    </figure>
+                    <!-- /Portfolio Item 2 -->
+
+                    <!-- Portfolio Item 3 -->
+                    <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                      <div class="portfolio-item-img custom">
+                        <img src="./img/portfolio/canvas-thread-2.png" alt="Full Project 2" title="" />
+                        <a href="portfolio-project-2.html" class="ajax-page-load"></a>                        
+                      </div>
+                      <div class="card-text">
+                        <p><span style="font-weight: bold;">CanvasThread.com</span> – online store offering custom-designed on-demand T-shirts.</p>
+                        <a href="#">Learn More</a>
+                      </div>
+                    </figure>
+                    <!-- /Portfolio Item 3 -->
+                  </div>
+
+                  <div class="fw-button-row">
+                    <a href="#" class="btn btn-primary">Explore More Projects</a>
+                  </div>
+                  <!-- /Portfolio Content -->
+                </div>
+                <!-- /Featured projects -->
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12">
+                    <div class="p-20"></div>
+
+                    <!-- Testimonials -->
+                    <div class="block-title">
+                      <h2>Testimonials</h2>
+                    </div>
+
+                    <div id="testimonials_1" class="testimonials owl-carousel" data-mobile-items="1" data-tablet-items="2" data-items="2">
+                      <!-- Testimonial 1 -->
+                      <div class="testimonial-item">
+                        <!-- Testimonial Content -->
+                        <div class="testimonial-content">
+                          <!-- Picture -->
+                          <div class="testimonial-picture">
+                            <img src="./img/testimonials/testimonial-1.jpg" alt="Billy Adams"/>
+                          </div>              
+                          <!-- /Picture -->
+
+                          <!-- Testimonial Text -->
+                          <div class="testimonial-text">
+                             <p>Masum and I worked closely together on a variety of projects. I watched him learn new skills and rapidly build his abilities in new technologies to the point where he was able to lead projects. The teams we were on together enjoyed working with him. He's friendly, honest and willing to help. Additionally, Masum and I worked together to build a team of new developers for which he then acted as a mentor. I'd recommend Masum for any role requiring a hard working, smart person who cares about the company, project and people with whom he works.</p>
+                          </div>
+                          <!-- /Testimonial Text -->
+
+                          <!-- Testimonial author information -->
+                          <div class="testimonial-author-info">
+                            <h5 class="testimonial-author">Silas Albrecht</h5>
+                            <p class="testimonial-firm">Last Call Media</p>
+                          </div>
+                          <!-- /Testimonial author information -->
+
+                          <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                          </div>
+
+                           <div class="testimonial-icon-big">
+                            <i class="fa fa-quote-right"></i>
+                          </div>
+                        </div>
+                        <!-- /Testimonial Content -->
+                      </div>
+                      <!-- End of Testimonial 1 -->
+
+                      <!-- Testimonial 2 -->
+                      <div class="testimonial-item">
+                        <!-- Testimonial Content -->
+                        <div class="testimonial-content">
+                          <!-- Picture -->
+                          <div class="testimonial-picture">
+                            <img src="./img/testimonials/testimonial-2.jpg" alt="Gary Johnson"/>
+                          </div>              
+                          <!-- /Picture -->
+
+                          <!-- Testimonial Text -->
+                          <div class="testimonial-text">
+                             <p>I wholeheartedly recommend Masum as a trustworthy and knowledgeable software engineer and project manager. His expertise and dedication are evident in his work. He's been a great colleague and friend. Masum's integrity, attention to detail, and strong communication skills make him an asset to any team. His passion for learning and innovation is inspiring, and I have no doubt that he will continue to excel in his career.</p>
+                          </div>
+                          <!-- /Testimonial Text -->
+
+                          <!-- Testimonial author information -->
+                          <div class="testimonial-author-info">
+                            <h5 class="testimonial-author">Kevin Williams</h5>
+                            <p class="testimonial-firm">Manifest FTS</p>
+                          </div>
+                          <!-- /Testimonial author information -->
+
+                          <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                          </div>
+
+                           <div class="testimonial-icon-big">
+                            <i class="fa fa-quote-right"></i>
+                          </div>
+                        </div>
+                        <!-- /Testimonial Content -->
+                      </div>
+                      <!-- End of Testimonial 2 -->
+
+                      <!-- Testimonial 3 -->
+                      <div class="testimonial-item">
+
+                        <!-- Testimonial Content -->
+                        <div class="testimonial-content">
+                          <!-- Picture -->
+                          <div class="testimonial-picture">
+                            <img src="./img/testimonials/testimonial-3.jpg" alt="Daniel Pringle"/>
+                          </div>              
+                          <!-- /Picture -->
+
+                          <!-- Testimonial Text -->
+                          <div class="testimonial-text">
+                            <p>Masum was one of the developers on the team that built the ERP for the University. He was a tremendous asset to have as he could work full stack and we assigned the leave management, meeting scheduling, and a significant portion of the core HR module to him. Masum delivered on time and it was quality work.</p>
+                          </div>
+                          <!-- /Testimonial Text -->
+
+                          <!-- Testimonial author information -->
+                          <div class="testimonial-author-info">
+                            <h5 class="testimonial-author">Monirul Hasan</h5>
+                            <p class="testimonial-firm">K. M. Hasan & Co.</p>
+                          </div>
+                          <!-- /Testimonial author information -->
+
+                          <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                          </div>
+
+                          <div class="testimonial-icon-big">
+                            <i class="fa fa-quote-right"></i>
+                          </div>
+                        </div>
+                        <!-- /Testimonial Content -->
+
+                      </div>
+                      <!-- End of Testimonial 3 -->
+
+                      <!-- Testimonial 4 -->
+                      <div class="testimonial-item">
+
+                        <!-- Testimonial Content -->
+                        <div class="testimonial-content">
+                          <!-- Picture -->
+                          <div class="testimonial-picture">
+                            <img src="./img/testimonials/testimonial-3.jpg" alt="Daniel Pringle"/>
+                          </div>
+                          <!-- /Picture -->
+
+                          <!-- Testimonial Text -->
+                          <div class="testimonial-text">
+                            <p>The thing I loved the most from working with Masum was his willingness to collaborate and deliver results. He was a reliable and trustworthy team member, actively listening to the client's requirements and proposing solutions. He was not afraid to say he didn't know the answer and go do some research to figure it out. Masum was helpful and easy to get along with. I'd love to have the opportunity to work together again!</p>
+                          </div>
+                          <!-- /Testimonial Text -->
+
+                          <!-- Testimonial author information -->
+                          <div class="testimonial-author-info">
+                            <h5 class="testimonial-author">Karen Da Cruz</h5>
+                            <p class="testimonial-firm">Last Call Media</p>
+                          </div>
+                          <!-- /Testimonial author information -->
+
+                          <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                          </div>
+
+                          <div class="testimonial-icon-big">
+                            <i class="fa fa-quote-right"></i>
+                          </div>
+                        </div>
+                        <!-- /Testimonial Content -->
+
+                      </div>
+                      <!-- End of Testimonial 4 -->
+                    </div>
+                    <!-- /Testimonials -->
+
+                    <div class="p-40"></div>
+
+                    <!-- Clients Slider -->
+                    <div class="block-title">
+                      <h2>Organizations I Have Served</h2>
+                    </div>
+
+                    <div class="clients-container">
+                      <div class="client-item">
+                        <a href="#" target="_blank" title="Golden Grid" style="text-align: center;">
+                          <img src="./img/clients/lcm.png" alt="Golden Grid" style="max-width: 60%;">
+                        </a>
+                      </div>
+
+                      <div class="client-item">
+                        <a href="#" target="_blank" title="Sweety" style="text-align: center;">
+                          <img src="./img/clients/seramount.png" alt="Sweety" style="max-width: 85%;">
+                        </a>
+                      </div>
+
+                      <div class="client-item">
+                        <a href="#" target="_blank" title="Magic Furnitures">
+                          <img src="./img/clients/Harvard_University_logo.png" alt="Magic Furnitures">
+                        </a>
+                      </div>
+
+                      <div class="client-item">
+                        <a href="#" target="_blank" title="LifeGuard">
+                          <img src="./img/clients/southeast-university.png" alt="LifeGuard">
+                        </a>
+                      </div>
+
+                      <div class="client-item">
+                        <a href="#" target="_blank" title="LESS">
+                          <img src="./img/clients/Alluvium_Group.png" alt="LESS">
+                        </a>
+                      </div>
+
+                      <div class="client-item">
+                        <a href="#" target="_blank" title="Design Lovers">
+                          <img src="./img/clients/nyu.png" alt="Design Lovers">
+                        </a>
+                      </div>
+                    </div>
+                    <!-- /Clients Slider -->
+
+                    <div class="p-40"></div>
+
+                  </div>
+                </div>
+
+                <!-- Fun Facts -->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12">
+                    <div class="block-title">
+                      <h2>Fun Facts</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-3">
+                    <div class="lm-info-block gray-default">
+                      <i class="linecons linecons-heart"></i>
+                      <h4>Happy Clients</h4>
+                      <span class="lm-info-block-value">78</span>
+                      <span class="lm-info-block-text"></span>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-3">
+                    <div class="lm-info-block gray-default">
+                      <i class="linecons linecons-clock"></i>
+                      <h4>Projects Launched</h4>
+                      <span class="lm-info-block-value">120+</span>
+                      <span class="lm-info-block-text"></span>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-3 ">
+                    <div class="lm-info-block gray-default">
+                      <i class="linecons linecons-star"></i>
+                      <h4>Countries Served</h4>
+                      <span class="lm-info-block-value">15</span>
+                      <span class="lm-info-block-text"></span>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-3 ">
+                    <div class="lm-info-block gray-default">
+                      <i class="linecons linecons-cup"></i>
+                      <h4>Coffee Consumed</h4>
+                      <span class="lm-info-block-value">766</span>
+                      <span class="lm-info-block-text"></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Fun Facts -->
+
+                <div class="p-40"></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer clearfix">
+          <div class="footer-social">
+            <ul class="footer-social-links">
+              <li>
+                <a href="https://www.linkedin.com/in/mmasum/" target="_blank">LinkedIn</a>
+              </li>
+
+              <li>
+                <a href="https://www.facebook.com/mmasumwork" target="_blank">Facebook</a>
+              </li>
+            </ul>
+          </div>
+              
+          <div class="footer-copyrights">
+            <p>© 2025 Md Masum — All rights reserved.</p>
+          </div>
+        </footer>
+        <!-- /Footer -->
+        
+      </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/jquery.shuffle.min.js'></script>
+    <script src='js/masonry.pkgd.min.js'></script>
+    <script src='js/owl.carousel.min.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
+    <script src="js/jquery.googlemap.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/background-animation.js"></script>
+  </body>
 </html>
